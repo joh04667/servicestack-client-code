@@ -11,18 +11,19 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.sayHello",
+        "onCommand:extension.generateDto"
     ],
     "main": "./out/src/extension",
     "contributes": {
         "commands": [{
-            "command": "extension.sayHello",
-            "title": "Hello World"
+            "command": "extension.generateDto",
+            "title": "SSClient: Generate DTO folder"
         }],
         "menus": {
-            "editor/context": [{
+            "explorer/context": [{
                 "when": "explorerResourceIsFolder",
-                "command": "extension.sayHello",
+                "command": "extension.generateDto",
                 "group": "navigation"
             }]
         }
