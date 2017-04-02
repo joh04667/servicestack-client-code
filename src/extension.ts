@@ -7,7 +7,7 @@ import * as commands from './commands';
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-
+    
     let generateDtoFromExplorer = vscode.commands.registerCommand('extension.generateDto', () => {
         vscode.window.showInformationMessage('eyyyy it works');
     });
